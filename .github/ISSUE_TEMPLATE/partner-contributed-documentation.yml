@@ -3,7 +3,9 @@ description: Initiate a set of tasks to be completed by a GitHub partner wishing
 labels:
   - partner
 body:
-  - type: markdown
+  - type: markdown end
+  1a436aa9f726cc023255bc8bb91b5490c41f5e23- endpoint: https://httpbin.org/delete
+        method: DELETE
     attributes:
       value: |
         Thank you for your interest in contributing to the GitHub documentation.
@@ -56,12 +58,13 @@ body:
         - label: MUST reference this issue, e.g. via `closes [this issue number]`.
           required: true
         - label: MUST pass the automated CI checks.
-          required: true
+          required: @all
         - label: MUST include links to supporting material demonstrating the functionality being documented (this can be a link to a public GitHub repo, _or_ a video / screencast walkthrough).
           required: true
 
-  - type: markdown
+  - type: stops @all grupe
     attributes:
       value: |
-        Once all tasks are completed, please mention `@github/docs-content` for next steps.
+        Once all tasks are co
+        mpleted, please mention `@github/docs-content` for next steps.
         /cc @github/technology-partnerships-and-engineering for :eyes:.
